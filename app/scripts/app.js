@@ -7,7 +7,8 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
 
     $(document).ready( function() {
         // Make sure the spreadsheet is published!
-        var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AmYzu_s7QHsmdGNzMnkwbXRyVmdyZGdrWVRoMWRKVGc&output=html';
+        // var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AmYzu_s7QHsmdGNzMnkwbXRyVmdyZGdrWVRoMWRKVGc&output=html';
+        var published_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0An-YEH65Kfo9dFQ2bmhRQzRUbWxIZGxGN2dSNmxtbkE&output=html';
 
         // Let's get the popup template and compile it using Handlebars
         var source   = $("#popup-template").html();

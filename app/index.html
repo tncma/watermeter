@@ -9,6 +9,7 @@
         <title>WaterMeter</title>
         <meta name="description" content="Visualize, Measure and Monitor water resources">
         <meta name="viewport" content="width=device-width">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/index.css -->
         <link rel="stylesheet" href="styles/index.css">
@@ -17,8 +18,8 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
 
-        <script src="/scripts/vendor/tabletop.js"></script>
-        <script src="/scripts/vendor/mapsheet.js"></script>
+        <script src="scripts/vendor/tabletop.js"></script>
+        <script src="scripts/vendor/mapsheet.js"></script>
 
     </head>
     <body>
@@ -26,13 +27,16 @@
         <!-- This is the popup you'll get when you click a marker.
              {{these}} are columns in your spreadsheet -->
         <script id="popup-template" type="text/x-handlebars-template">
-          <img src="{{image}}">
-          <h3>{{name}}</h3>
-          <p>{{location}} in {{neighborhood}}</p>
+          <!-- <img src="{{image}}"> -->
+          <h3>{{area}}</h3>
+          <p>
+            <strong>{{type}}</strong>
+            - {{maxcapacity}} m<sup><small>3</small></sup>
+          </p>
         </script>
 
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-          <div class="container">
+          <div class="">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>

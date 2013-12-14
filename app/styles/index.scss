@@ -1,5 +1,6 @@
 // Import Compass styles
 @import "compass/css3";
+//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 // Import Vendor Styles
 @import "sass-bootstrap/lib/bootstrap";
@@ -27,6 +28,7 @@ body {
 }
 
 .navbar-brand {
+    //font-family: 'Source Sans Pro', sans-serif;
     color: #f1c40f !important;
     font-size: 1.8em;
 

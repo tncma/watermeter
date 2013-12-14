@@ -11877,51 +11877,51 @@ td.visible-print {
   content: "\f196";
 }
 
-/* line 8, ../../app/styles/index.scss */
+/* line 9, ../../app/styles/index.scss */
 
 body {
   padding-top: 50px;
 }
 
-/* line 12, ../../app/styles/index.scss */
+/* line 13, ../../app/styles/index.scss */
 
 .fa {
   margin-right: 5px;
 }
 
-/* line 16, ../../app/styles/index.scss */
+/* line 17, ../../app/styles/index.scss */
 
 #map {
   width: 100%;
   height: 900px;
 }
 
-/* line 21, ../../app/styles/index.scss */
+/* line 22, ../../app/styles/index.scss */
 
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 24, ../../app/styles/index.scss */
+/* line 25, ../../app/styles/index.scss */
 
 .navbar li a {
   font-size: 1.2em;
 }
 
-/* line 29, ../../app/styles/index.scss */
+/* line 30, ../../app/styles/index.scss */
 
 .navbar-brand {
   color: #f1c40f !important;
   font-size: 1.8em;
 }
 
-/* line 33, ../../app/styles/index.scss */
+/* line 35, ../../app/styles/index.scss */
 
 .navbar-brand .fa {
   margin-right: 0;
 }
 
-/* line 38, ../../app/styles/index.scss */
+/* line 40, ../../app/styles/index.scss */
 
 .footer {
   padding: 10px;
@@ -11930,13 +11930,13 @@ body {
   opacity: 0.9;
 }
 
-/* line 44, ../../app/styles/index.scss */
+/* line 46, ../../app/styles/index.scss */
 
 .footer p {
   margin-bottom: 0;
 }
 
-/* line 48, ../../app/styles/index.scss */
+/* line 50, ../../app/styles/index.scss */
 
 .footer .fa-heart {
   color: #e74c3c;
