@@ -6,15 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>test</title>
-        <meta name="description" content="">
+        <title>WaterMeter</title>
+        <meta name="description" content="Visualize, Measure and Monitor water resources">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/index.css -->
         <link rel="stylesheet" href="styles/index.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -34,24 +31,35 @@
           <p>{{location}} in {{neighborhood}}</p>
         </script>
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">test</h3>
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"> <i class="fa fa-dashboard"></i> WaterMeter</a>
             </div>
 
-            <!-- This is where the map will go -->
-            <div id="map"></div>
+            <!-- Collect the nav l  inks, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
+        <!-- This is where the map will go -->
+        <div id="map"></div>
 
+        <div class="footer">
+            <p>Made with <span class="fa fa-heart"></span> in Chennai</p>
         </div>
+
 
 
         <!-- build:js scripts/vendor.js -->

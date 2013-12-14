@@ -252,7 +252,8 @@ module.exports = function (grunt) {
         // Put files not handled in other tasks here
         copy: {
             dist: {
-                files: [{
+                files: [
+                {
                     expand: true,
                     dot: true,
                     cwd: '<%= yeoman.app %>',
@@ -261,9 +262,18 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/{,*/}*.*',
+                        'fonts/{,*/}*.*',
+                        'scripts/*.js',
+                        'scripts/vendor/{,*/}*.*',
                         'bower_components/sass-bootstrap/fonts/*.*'
                     ]
+                },
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/bower_components',
+                    dest: '<%= yeoman.dist %>/bower_components',
+                    src: '**'
                 }]
             },
             styles: {
@@ -340,10 +350,10 @@ module.exports = function (grunt) {
         'requirejs',
         'concat',
         'cssmin',
-        'uglify',
-        'modernizr',
+        // 'uglify',
+        // 'modernizr',
         'copy:dist',
-        'rev',
+        // 'rev',
         'usemin'
     ]);
 

@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WaterMeter</title>
+        <meta name="description" content="Visualize, Measure and Monitor water resources">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/index.css">
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+
+        <script src="/scripts/vendor/tabletop.js"></script>
+        <script src="/scripts/vendor/mapsheet.js"></script>
+
+    </head>
+    <body>
+
+        <!-- This is the popup you'll get when you click a marker.
+             {{these}} are columns in your spreadsheet -->
+        <script id="popup-template" type="text/x-handlebars-template">
+          <img src="{{image}}">
+          <h3>{{name}}</h3>
+          <p>{{location}} in {{neighborhood}}</p>
+        </script>
+
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"> <i class="fa fa-dashboard"></i> WaterMeter</a>
+            </div>
+
+            <!-- Collect the nav l  inks, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
+
+        <!-- This is where the map will go -->
+        <div id="map"></div>
+
+        <div class="footer">
+            <p>Made with <span class="fa fa-heart"></span> in Chennai</p>
+        </div>
+
+
+
+        <script src="scripts/vendor.js"></script>
+
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
