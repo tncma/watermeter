@@ -21,8 +21,19 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
           popupTemplate: template
         });
 
-        //
+        // Show app reading
+        $("#main-container").on('click', '.add-reading', function() {
+            $("#add-reading-box").show();
+            $("#view-readings-box").hide();
+        });
 
+        $("#main-container").on('click', '.view-readings', function() {
+            $("#add-reading-box").hide();
+            $("#view-readings-box").show();
+        });
+
+        $("#add-reading-box").hide();
+        $("#view-readings-box").hide();
     });
 
 

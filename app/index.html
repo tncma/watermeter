@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>WaterMeter</title>
-        <meta name="description" content="Visualize, Measure and Monitor water resources">
+        <meta name="description" content="Visualize, Measure and Improve water resources">
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -33,6 +33,12 @@
             <strong>{{type}}</strong>
             - {{maxcapacity}} m<sup><small>3</small></sup>
           </p>
+
+          <p>
+            <a href="#" class="btn btn-xs btn-success add-reading">Add Reading</a>
+            <a href="#" class="btn btn-xs btn-success view-readings">View Readings</a>
+          </p>
+
         </script>
 
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -58,7 +64,43 @@
         </nav>
 
         <!-- This is where the map will go -->
-        <div id="map" class="map"></div>
+        <div class="main-container" id="main-container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="map" class="map"></div>
+                </div>
+
+                <div class="col-md-3 sidebar">
+                    <div id="add-reading-box">
+                        <h3 class="heading">Add Reading</h3>
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Reading</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="reading" placeholder="Current Meter Reading">
+                            </div>
+                          </div>
+                          <p class="or-divider text-center">OR</p>
+                          <button type="submit" class="btn btn-primary btn-snapshot"> <i class="fa fa-camera"></i> Take Snapshot</button>
+                          <hr>
+
+                          <button type="submit" class="btn btn-success btn-submit">Save Reading</button>
+                        </form>
+                    </div>
+                    <div id="view-readings-box">
+                        <h3 class="heading">Readings</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="label label-default">09-12-2013</span>
+                                <small> Reading <strong>2344</strong> &nbsp; &nbsp;
+                                <small>Capacity</small> <strong>5000</strong> 
+                            </li>            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="footer">
             <p>Made with <span class="fa fa-heart"></span> in Chennai</p>

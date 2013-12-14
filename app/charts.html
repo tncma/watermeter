@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WaterMeter</title>
+        <meta name="description" content="Visualize, Measure and Improve water resources">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/index.css -->
+        <link rel="stylesheet" href="styles/index.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"> <i class="fa fa-dashboard"></i> WaterMeter</a>
+            </div>
+
+            <!-- Collect the nav l  inks, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
+
+        <!-- This is where the map will go -->
+        <div class="main-container">
+            <div class="page-header">
+                <h4>Water Flow</h4>
+            </div>
+            <canvas id="chart" style="width: 100%">
+                <svg ></svg>
+            </canvas>
+        </div>
+
+        <div class="footer">
+            <p>Made with <span class="fa fa-heart"></span> in Chennai</p>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <script src="bower_components/d3/d3.min.js"></script>
+        <script src="bower_components/nvd3/nv.d3.min.js"></script>
+
+        <script src="scripts/chart.js"></script>
+
+</body>
+</html>

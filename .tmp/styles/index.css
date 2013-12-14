@@ -1,3 +1,5 @@
+@import url(../bower_components/nvd3/nv.d3.css);
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -24963,7 +24965,7 @@ td.visible-print {
   }
 
   line {
-    font-family: \000039;
+    font-family: \0000313;
   }
 }
 
@@ -24977,7 +24979,7 @@ body {
   }
 
   line {
-    font-family: \0000313;
+    font-family: \0000317;
   }
 }
 
@@ -24991,7 +24993,28 @@ body {
   }
 
   line {
-    font-family: \0000317;
+    font-family: \0000321;
+  }
+}
+
+.heading {
+  font-size: 1.5em;
+  padding: 15px 5px 10px 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #e67e22;
+  background-color: #ecf0f1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000332;
   }
 }
 
@@ -25005,7 +25028,7 @@ body {
   }
 
   line {
-    font-family: \0000320;
+    font-family: \0000335;
   }
 }
 
@@ -25019,7 +25042,7 @@ body {
   }
 
   line {
-    font-family: \0000325;
+    font-family: \0000340;
   }
 }
 
@@ -25034,7 +25057,7 @@ body {
   }
 
   line {
-    font-family: \0000330;
+    font-family: \0000345;
   }
 }
 
@@ -25048,14 +25071,14 @@ body {
   }
 
   line {
-    font-family: \0000335;
+    font-family: \0000350;
   }
 }
 
-.map {
-  width: 100%;
-  height: 100vh;
+.main-container {
+  padding-top: 50px;
   margin-top: -50px;
+  height: 100vh;
 }
 
 @media -sass-debug-info {
@@ -25064,7 +25087,99 @@ body {
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000355;
+  }
+}
+
+.main-container .row {
+  margin-left: -15px;
+  margin-right: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000361;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #D9D9D9;
+  border-color: rgba(102, 102, 102, 0.25);
+  background: #E5E3DF;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000370;
+  }
+}
+
+.sidebar {
+  padding-left: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.or-divider {
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000380;
+  }
+}
+
+.btn-snapshot {
+  margin: 0 auto;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000388;
+  }
+}
+
+.page-header {
+  padding-top: 70px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000393;
   }
 }
 
@@ -25086,7 +25201,7 @@ body {
   }
 
   line {
-    font-family: \0000352;
+    font-family: \00003104;
   }
 }
 
@@ -25100,7 +25215,7 @@ body {
   }
 
   line {
-    font-family: \0000356;
+    font-family: \00003108;
   }
 }
 
