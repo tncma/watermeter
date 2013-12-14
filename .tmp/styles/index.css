@@ -24984,3 +24984,18 @@ body {
 .fa {
   margin-right: 5px;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+#map {
+  width: 600px;
+  height: 500px;
+}

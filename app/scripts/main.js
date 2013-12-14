@@ -65,12 +65,8 @@ require.config({
 });
 
 // Starting point of the application
-require(['jquery', 'app' 'bootstrapCollapse',
+require(['jquery', 'app', 'bootstrapCollapse',
     'bootstrapTransition'], function ($, app) {
     'use strict';
-
-    $(function () {
-
-    });
 
 });
