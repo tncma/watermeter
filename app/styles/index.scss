@@ -1,0 +1,16 @@
+// Import Compass styles
+@import "compass/css3";
+
+// Import Vendor Styles
+@import "sass-bootstrap/lib/bootstrap";
+@import "font-awesome/scss/font-awesome";
+
+body {
+    padding-top: 70px;
+    font-family: $font-family;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
