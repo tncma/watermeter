@@ -25,11 +25,13 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
         $("#main-container").on('click', '.add-reading', function() {
             $("#add-reading-box").show();
             $("#view-readings-box").hide();
+            $("#info-box").hide();
         });
 
         $("#main-container").on('click', '.view-readings', function() {
             $("#add-reading-box").hide();
             $("#view-readings-box").show();
+            $("#info-box").hide();
         });
 
         $("#add-reading-box").hide();
