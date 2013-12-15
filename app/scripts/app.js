@@ -64,7 +64,8 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
             showReadings();
         });
 
-        $("#main-container").on('click', '#btn-submit', function() {
+        $("#main-container").on('click', '#btn-submit', function(e) {
+            e.preventDefault();
             showReadings();
         });
 

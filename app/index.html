@@ -50,6 +50,9 @@
                 <span class=" label label-default">{{date}}</span>
                 <small> Reading</small> <strong>{{reading}}</strong> &nbsp; &nbsp;
                 <small>Capacity</small> <strong>5000</strong>
+                {{#if comment}}
+                <blockquote>{{comment}}</blockquote>
+                {{/if}}
             </li>
             {{/each}}
 
