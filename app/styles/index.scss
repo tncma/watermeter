@@ -86,6 +86,17 @@ body {
     display: block;
 }
 
+.reading-list {
+
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #efefef;
+    }
+
+    .label {
+        font-size: 1.1em;
+    }
+}
 .btn-submit {
 }
 

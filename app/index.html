@@ -41,6 +41,20 @@
 
         </script>
 
+        <!-- This is the popup you'll get when you click a marker.
+             {{these}} are columns in your spreadsheet -->
+        <script id="list-template" type="text/x-handlebars-template">
+           {{#each readings}}
+
+            <li>
+                <span class=" label label-default">{{date}}</span>
+                <small> Reading</small> <strong>{{reading}}</strong> &nbsp; &nbsp;
+                <small>Capacity</small> <strong>5000</strong>
+            </li>
+            {{/each}}
+
+        </script>
+
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
           <div class="">
             <div class="navbar-header">
@@ -102,23 +116,16 @@
                          <div>
                             <textarea type="text" class="form-control" id="comment" placeholder="Add Comment here"></textarea>
                          </div>
-
-
                           <hr>
 
-                          <button type="submit" class="btn btn-success btn-submit"><i class="fa fa-check-circle"></i>Save Reading</button>
+                          <button type="submit" id="btn-submit" class="btn btn-success btn-submit"><i class="fa fa-check-circle"></i>Save Reading</button>
                         </form>
                     </div>
                     <div id="view-readings-box">
                         <h3 class="heading"><i class="fa fa-bullseye"></i> Readings
                         <a href="/charts.html" class="pull-right btn btn-xs btn-success"><i class="fa fa-bar-chart-o"></i></a>
                         </h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <span class="label label-default">09-12-2013</span>
-                                <small> Reading <strong>2344</strong> &nbsp; &nbsp;
-                                <small>Capacity</small> <strong>5000</strong>
-                            </li>
+                        <ul id="reading-list" class="list-unstyled reading-list">
                         </ul>
                     </div>
 
