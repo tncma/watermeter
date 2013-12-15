@@ -25285,3 +25285,85 @@ blockquote {
   color: #e74c3c;
   margin-right: 0;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \00003140;
+  }
+}
+
+.lead {
+  font-size: 18px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \00003144;
+  }
+}
+
+.color-main {
+  background-color: #0000FF;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \00003151;
+  }
+}
+
+.color-tank {
+  background-color: #00FF7F;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \00003158;
+  }
+}
+
+.color-valve {
+  background-color: #556B2F;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/fizerkhan\/development\/study\/hackathon\/watermeter\/app\/styles\/index\.scss;
+  }
+
+  line {
+    font-family: \00003165;
+  }
+}
+
+.color-tap {
+  background-color: #FF6103;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}

@@ -48,6 +48,9 @@
                 <span class=" label label-default">{{date}}</span>
                 <small> Reading</small> <strong>{{reading}}</strong> &nbsp; &nbsp;
                 <small>Capacity</small> <strong>5000</strong>
+                {{#if comment}}
+                <blockquote>{{comment}}</blockquote>
+                {{/if}}
             </li>
             {{/each}}
 
@@ -93,7 +96,12 @@
                             various units without manual errors. Moreover
                             you can statistically view all available reading
                             in a easy understandable format.
-                    </p></div>
+                        </p>
+                        <p><span class="color-main"></span> Main Supply</p>
+                        <p><span class="color-tank"></span> Tanks</p>
+                        <p><span class="color-valve"></span> Volve(Node)</p>
+                        <p><span class="color-tap"></span> Tap(Sub Node)</p>
+                    </div>
 
                     <div id="add-reading-box">
                         <h3 class="heading"> <i class="fa fa-plus-circle"></i> Add Reading
@@ -116,7 +124,7 @@
                          </div>
                           <hr>
 
-                          <a href="#" type="submit" id="btn-submit" class="btn btn-success btn-submit"><i class="fa fa-check-circle"></i>Save Reading</a>
+                          <button type="submit" id="btn-submit" class="btn btn-success btn-submit"><i class="fa fa-check-circle"></i>Save Reading</button>
                         </form>
                     </div>
                     <div id="view-readings-box">
@@ -125,6 +133,7 @@
                         </h3>
                         <ul id="reading-list" class="list-unstyled reading-list">
                         </ul>
+                        <a href="#">View More</a>
                     </div>
 
                 </div>

@@ -56,11 +56,11 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
         }
 
         // Show app reading
-        $("#main-container").on('click', '.add-reading', function(e) {
+        $("#main-container").on('click', '.add-reading', function() {
             showAddForm();
         });
 
-        $("#main-container").on('click', '.view-readings', function(e) {
+        $("#main-container").on('click', '.view-readings', function() {
             showReadings();
         });
 

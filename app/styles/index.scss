@@ -137,3 +137,34 @@ blockquote {
     }
 }
 
+.lead {
+    font-size: 18px;
+}
+
+.color-main {
+    background-color: #0000FF;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.color-tank {
+    background-color: #00FF7F;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.color-valve {
+    background-color: #556B2F;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.color-tap {
+    background-color: #FF6103;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
