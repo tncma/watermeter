@@ -8,7 +8,7 @@ Moreover you can statistically view all available reading in a easy understandab
 
 ## Objectives
 
-1. Visualise water supply resource such tanks, valves and taps in Google maps
+1. Visualize water supply resource such tanks, valves and taps in Google maps
 2. Measure the readings for water resource units.
 3. Improve the process by statistically analyzing the past data and plan for future development.
 
