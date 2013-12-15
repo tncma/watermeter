@@ -6,6 +6,8 @@ By visualization, you can plan for extending water pipeline and maintenance. Wit
 measure the water unit reading from various units without manual errors.
 Moreover you can statistically view all available reading in a easy understandable format.
 
+Demo: [http://watermeter-cma.appspot.com/](http://watermeter-cma.appspot.com/)
+
 ## Objectives
 
 1. Visualize water supply resource such tanks, valves and taps in Google maps
