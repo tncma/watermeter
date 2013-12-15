@@ -18,7 +18,18 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
         var map = Mapsheet({
           key: published_spreadsheet_url,
           element: "map",
-          popupTemplate: template
+          popupTemplate: template,
+        callback: function(mapsheet, tabletop) {
+            var waterBodies = [];
+            for(var i=0; i < mapsheet.points.length; i++) {
+                console.log(mapsheet.points[i].get('latitude'));
+                console.log(mapsheet.points[i].get('longitude'));
+                console.log(mapsheet.points[i].get('code'));
+                console.log(mapsheet.points[i].get('relation'));
+                waterBodies.push(mapsheet.points[i].get('relation'));
+              }
+            }
+
         });
 
         // Show app reading
