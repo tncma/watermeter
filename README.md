@@ -1,21 +1,23 @@
 WaterMeter
 ==========
 
-WaterMeter helps water department to visualize,
-measure, and improve the water management.
-By visualization, you can plan for extending water
-pipeline and maintenance. With WaterMeter, you can
-measure the water unit resource reading from
-various units without manual errors. Moreover
-you can statistically view all available reading
-in a easy understandable format.
+WaterMeter helps water department to visualize,  measure, and improve the water management.
+By visualization, you can plan for extending water pipeline and maintenance. With WaterMeter, you can
+measure the water unit reading from various units without manual errors.
+Moreover you can statistically view all available reading in a easy understandable format.
 
-Team: `Surabi`
+## Objectives
+
+1. Visualise water supply resource such tanks, valves and taps in Google maps
+2. Measure the readings for water resource units.
+3. Improve the process by statistically analyzing the past data and plan for future development.
+
+`Team`: `Surabi`
 
 ## Collaborator:
 
-Fizer Khan
-Karthic Pv
-Gopal
-PaulRaj
+* Fizer Khan
+* Karthic Pv
+* Gopal
+* PaulRaj
 
