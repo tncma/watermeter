@@ -12,7 +12,9 @@ Moreover you can statistically view all available reading in a easy understandab
 2. Measure the readings for water resource units.
 3. Improve the process by statistically analyzing the past data and plan for future development.
 
-`Team`: `Surabi`
+## Team :  Surabi
+
+We are so called `Surabi` who made water management simpler and easier
 
 ## Collaborator:
 
