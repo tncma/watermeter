@@ -32,21 +32,45 @@ define(['waterbodies', 'watermeter'], function (waterbodies, watermeter) {
 
         });
 
-        // Show app reading
-        $("#main-container").on('click', '.add-reading', function() {
-            $("#add-reading-box").show();
-            $("#view-readings-box").hide();
-            $("#info-box").hide();
-        });
 
-        $("#main-container").on('click', '.view-readings', function() {
+        function showInfo() {
+            $("#add-reading-box").hide();
+            $("#view-readings-box").hide();
+        }
+
+        function showReadings() {
             $("#add-reading-box").hide();
             $("#view-readings-box").show();
             $("#info-box").hide();
+
+            var source   = $("#list-template").html();
+            var template = Handlebars.compile(source);
+            var html    = template(watermeter);
+            $("#reading-list").html(html);
+        }
+
+        function showAddForm() {
+            $("#add-reading-box").show();
+            $("#view-readings-box").hide();
+            $("#info-box").hide();
+        }
+
+        // Show app reading
+        $("#main-container").on('click', '.add-reading', function() {
+            showAddForm();
         });
 
-        $("#add-reading-box").hide();
-        $("#view-readings-box").hide();
+        $("#main-container").on('click', '.view-readings', function() {
+            showReadings();
+        });
+
+        $("#main-container").on('click', '#btn-submit', function() {
+            showReadings();
+        });
+
+
+        showInfo();
+
     });
 
 
