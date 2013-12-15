@@ -12,10 +12,7 @@ return { readings: [
 {"date":"12/07/13","reading":5084,"comment":null},
 {"date":"12/06/13","reading":4819,"comment":null},
 {"date":"12/05/13","reading":4814,"comment":"Need more water."},
-{"date":"12/04/13","reading":4945,"comment":null},
-{"date":"12/03/13","reading":4909,"comment":null},
-{"date":"12/02/13","reading":4946,"comment":null},
-]
+{"date":"12/04/13","reading":4945,"comment":null}]
 };
 
 });
